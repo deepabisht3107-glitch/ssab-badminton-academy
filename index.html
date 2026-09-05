@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SSAB — Super Sports Academy of Badminton, Dehradun. Coaching, training, fitness and badminton court information.">
+<meta name="theme-color" content="#0d1510">
+<title>SSAB | Super Sports Academy of Badminton | Dehradun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f5ef;--ink:#0c140f;--green:#173124;--lime:#caff39;--muted:#657069;--line:#d0d4cb;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif}a{color:inherit}
+.nav{height:78px;padding:0 6vw;display:flex;align-items:center;gap:30px;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;background:#f5f5eff5;backdrop-filter:blur(14px)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800}.logo-mark{width:40px;height:40px;border-radius:50%;background:var(--lime);display:grid;place-items:center;font:700 24px Oswald}.logo small{display:block;font-size:7px;letter-spacing:1.7px}
+.navlinks{margin-left:auto;display:flex;gap:24px}.navlinks a{text-decoration:none;font-size:11px;font-weight:800}.nav-cta{background:var(--ink);color:#fff;text-decoration:none;padding:13px 18px;font-size:11px;font-weight:800}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:680px}.hero-copy{padding:90px 6vw;display:flex;flex-direction:column;justify-content:center}.eyebrow,.label{font-size:10px;font-weight:800;letter-spacing:3px}.hero h1{font:700 clamp(54px,7vw,104px)/.88 Oswald;margin:18px 0 0;letter-spacing:-3px}.hero h1 span,.section h2 em,.dark h2 em{font-style:normal;color:#68771f}.hero-copy>p:not(.eyebrow){max-width:570px;color:var(--muted);line-height:1.75;margin:30px 0}.actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-block;padding:15px 22px;border:1px solid var(--ink);text-decoration:none;font-size:12px;font-weight:800}.primary{background:var(--lime)}.hero-photo{position:relative;background:var(--green);overflow:hidden}.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.62))}.hero-tag{position:absolute;z-index:2;bottom:8%;left:8%;color:#fff;border-left:4px solid var(--lime);padding-left:15px}.hero-tag b{font:700 50px Oswald;display:block}.hero-tag span{font-size:9px;letter-spacing:2px}
+.trust{background:var(--lime);padding:18px 6vw;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:10px;font-weight:800;letter-spacing:1.5px}
+.section{padding:100px 6vw}.section h2{font:700 clamp(43px,5vw,72px)/.95 Oswald;margin:12px 0 25px}.intro{max-width:720px;color:var(--muted);line-height:1.8}
+.snapshot{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:48px}.snapshot div{background:var(--bg);padding:28px;min-height:170px}.snapshot b{font:700 29px Oswald;display:block;margin-bottom:12px}.snapshot span{font-size:12px;color:var(--muted);line-height:1.6}
+.training{background:#e7e9e1}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:45px}.card{padding:30px;min-height:300px;border:1px solid var(--line);background:var(--bg)}.card.dark{background:var(--ink);color:#fff}.card .num{font-size:10px;color:#6e786f;font-weight:800}.card h3{font:700 40px Oswald;margin:70px 0 10px}.card p{font-size:13px;line-height:1.7;color:var(--muted)}.dark p{color:#aab3ac}
+.value{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.value-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}.value-list div{background:var(--bg);padding:25px;min-height:145px}.value-list b{font:700 23px Oswald;display:block;margin-bottom:9px}.value-list span{font-size:11px;color:var(--muted);line-height:1.6}
+.dark{background:var(--ink);color:#fff}.dark h2{font:700 clamp(46px,6vw,78px)/.9 Oswald;margin:12px 0 25px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact-box{display:grid;gap:12px;align-content:center}.contact-box a{background:#18241d;border:1px solid #344239;padding:18px;text-decoration:none}.contact-box strong{display:block;color:var(--lime);font-size:9px;letter-spacing:2px;margin-bottom:5px}
+.location{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.map{min-height:330px;background:#dfe2d9;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:30px;gap:10px}.map span:first-child{font-size:42px}.map b{font:700 27px Oswald}.map a{background:var(--ink);color:#fff;text-decoration:none;padding:13px 18px;font-size:11px;font-weight:800;margin-top:8px}
+.offer{background:var(--lime);display:grid;grid-template-columns:1.2fr .8fr;gap:60px;padding:75px 6vw}.offer h2{font:700 clamp(43px,5vw,65px)/.93 Oswald;margin:10px 0 18px}.offer p{line-height:1.7;max-width:620px}.package{background:rgba(255,255,255,.35);padding:28px;border:1px solid rgba(12,20,15,.25)}.package b{font:700 30px Oswald;display:block}.package ul{padding-left:18px;line-height:1.9;font-size:12px}
+.notice{padding:17px 6vw;background:#fff8d7;border-top:1px solid #ded39a;border-bottom:1px solid #ded39a;color:#5b531f;font-size:11px;line-height:1.7}.notice strong{font-weight:800}
+footer{background:#080d0a;color:#fff;padding:35px 6vw;display:flex;justify-content:space-between;align-items:center;gap:20px}footer p,footer a{font-size:10px;color:#a2aaa4;text-decoration:none}
+@media(max-width:850px){.navlinks,.nav-cta{display:none}.hero,.value,.contact-grid,.location,.offer{grid-template-columns:1fr}.hero-photo{min-height:430px}.hero-copy{padding:70px 5vw}.section{padding:75px 5vw}.snapshot,.cards{grid-template-columns:1fr}.value-list{margin-top:20px}footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="#home"><span class="logo-mark">S</span><span>SSAB<small>SUPER SPORTS ACADEMY OF BADMINTON</small></span></a>
+<nav class="navlinks"><a href="#about">ABOUT</a><a href="#training">TRAINING</a><a href="#contact">CONTACT</a><a href="#location">LOCATION</a></nav>
+<a class="nav-cta" href="#contact">ENQUIRE NOW</a>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="hero-copy">
+<p class="eyebrow">DEHRADUN • UTTARAKHAND • BADMINTON</p>
+<h1>BUILD YOUR<br><span>GAME.</span><br>OWN THE RALLY.</h1>
+<p>Welcome to <strong>SSAB — Super Sports Academy of Badminton</strong>. A professional-looking digital home for your academy, designed to help new players discover your training, location and contact details.</p>
+<div class="actions"><a class="btn primary" href="#contact">JOIN / ENQUIRE →</a><a class="btn" href="#training">SEE PROGRAMS</a></div>
+</div>
+<div class="hero-photo"><img src="ssab-signboard.png" alt="SSAB Super Sports Academy of Badminton"><div class="hero-tag"><b>SSAB</b><span>SUPER SPORTS ACADEMY OF BADMINTON</span></div></div>
+</section>
+
+<div class="trust"><span>COACHING</span><span>COURT TRAINING</span><span>FITNESS</span><span>FOOTWORK</span><span>MATCH PLAY</span><span>DEHRADUN</span></div>
+
+<section class="section" id="about">
+<div class="label">01 / ABOUT</div><h2>A stronger online presence<br><em>for SSAB.</em></h2>
+<p class="intro">This client-ready concept presents SSAB as a serious badminton academy and gives prospective players the information they need before contacting the academy.</p>
+<div class="snapshot">
+<div><b>OPEN FOR ALL</b><span>Public listing information describes the academy's age group as open for all.</span></div>
+<div><b>COACHING</b><span>Skill, footwork, fitness, consistency and match awareness.</span></div>
+<div><b>DEHRADUN</b><span>Kandoli, Saundhon Wali, Raipur, Dehradun.</span></div>
+<div><b>CONTACT</b><span>Phone, email and Google Maps access in one place.</span></div>
+</div>
+</section>
+
+<section class="section training" id="training">
+<div class="label">02 / PROGRAMS</div><h2>Training for every<br><em>stage of the game.</em></h2>
+<div class="cards">
+<article class="card"><div class="num">01 / BEGINNER</div><h3>START</h3><p>Grip, stance, serves, strokes, movement and court awareness — the foundations of a confident player.</p></article>
+<article class="card dark"><div class="num">02 / INTERMEDIATE</div><h3>IMPROVE</h3><p>Footwork, technique, consistency, tactics and match confidence for the next level.</p></article>
+<article class="card"><div class="num">03 / ADVANCED</div><h3>PERFORM</h3><p>Performance-oriented training for players focused on competition and continuous improvement.</p></article>
+</div>
+</section>
+
+<section class="section value">
+<div><div class="label">03 / WHY A WEBSITE?</div><h2>Turn searches into<br><em>new enquiries.</em></h2><p class="intro">A dedicated SSAB website gives parents and players one trusted place to understand the academy, check key information and contact the team.</p></div>
+<div class="value-list">
+<div><b>24/7 DISCOVERY</b><span>Players can find SSAB information outside training hours.</span></div>
+<div><b>MORE TRUST</b><span>A professional website strengthens the academy's online presence.</span></div>
+<div><b>EASY CONTACT</b><span>Call and email buttons reduce friction for enquiries.</span></div>
+<div><b>LOCAL VISIBILITY</b><span>Useful location and search-friendly content for Dehradun.</span></div>
+</div>
+</section>
+
+<section class="section dark" id="contact">
+<div class="contact-grid">
+<div><div class="label">04 / CONTACT</div><h2>READY TO<br><em>PLAY?</em></h2><p>Call, email or message SSAB to confirm current batches, fees, court availability and trial-session information.</p></div>
+<div class="contact-box">
+<a href="tel:+919719057574"><strong>CALL</strong>9719057574</a>
+<a href="tel:+916398780819"><strong>CALL</strong>6398780819</a>
+<a href="tel:+919997685682"><strong>CALL / WHATSAPP</strong>9997685682</a>
+<a href="mailto:ssabdehradun@gmail.com"><strong>EMAIL</strong>ssabdehradun@gmail.com</a>
+</div>
+</div>
+</section>
+
+<section class="section location" id="location">
+<div><div class="label">05 / LOCATION</div><h2>Find SSAB<br><em>in Dehradun.</em></h2>
+<p class="intro"><strong>Unnamed Road, Kandoli, Saundhon Wali, Raipur, Dehradun, Uttarakhand 248001</strong></p>
+<p class="intro"><strong>Listed hours:</strong> 6:00 AM–10:00 AM & 3:30 PM–9:00 PM</p>
+<p class="intro"><strong>Listed fee:</strong> ₹2,500/month</p></div>
+<div class="map"><span>📍</span><b>KANDOLI • SAUNDHON WALI • RAIPUR</b><span>Dehradun, Uttarakhand 248001</span><a href="https://www.google.com/maps/search/?api=1&query=SSAB%20Super%20Sports%20Academy%20of%20Badminton%20Kandoli%20Saundhon%20Wali%20Raipur%20Dehradun%20Uttarakhand%20248001" target="_blank" rel="noopener">OPEN GOOGLE MAPS →</a></div>
+</section>
+
+<section class="offer">
+<div><div class="label">06 / WEBSITE OFFER</div><h2>A website SSAB<br>can be proud of.</h2><p>This preview is designed as a sales-ready concept. Before launch, the academy's approved photos, coach profiles, official timings, fees and exact map pin can be added.</p></div>
+<div class="package"><b>CLIENT-READY PACKAGE</b><ul><li>Responsive desktop + mobile design</li><li>Academy branding and real signboard image</li><li>Programs / training sections</li><li>Click-to-call and email contact</li><li>Google Maps button</li><li>SEO-ready page structure</li><li>Easy future photo/gallery updates</li></ul><a class="btn primary" href="#contact">DISCUSS THE WEBSITE →</a></div>
+</section>
+
+<div class="notice"><strong>Verification note:</strong> Location, hours and fee shown here come from public online listings and should be confirmed by SSAB before the website is published. The contact details shown came from the supplied SSAB signboard photo.</div>
+</main>
+
+<footer>
+<a class="logo" href="#home"><span class="logo-mark">S</span><span>SSAB<small>BADMINTON ACADEMY</small></span></a>
+<p>© <span id="year"></span> SSAB Badminton Academy • Dehradun</p>
+<a href="mailto:ssabdehradun@gmail.com">ssabdehradun@gmail.com</a>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
